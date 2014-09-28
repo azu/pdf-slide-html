@@ -33,7 +33,7 @@ var optionator = require('optionator')({
             option: 'output',
             alias: 'o',
             type: 'String',
-            description: 'ouput file path',
+            description: 'output file path',
             example: cmd + ' --output index.html',
             required: true
         }
@@ -43,5 +43,5 @@ var options = optionator.parse(process.argv);
 if (options.help) {
     console.log(optionator.generateHelp());
 } else {
-    require("../lib/generator")(options);
+    require("../lib/writer")(options)
 }

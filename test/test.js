@@ -6,8 +6,8 @@ describe("generate", function () {
     it("should generate", function () {
         var result = generator({
             title: "title",
-            "base-url": "http://azu.github.io/slide-pdf.js/",
-            "pdf-url": "http://azu.github.io/slide/DOMQuery/sourcemap.pdf",
+            "baseUrl": "http://azu.github.io/slide-pdf.js/",
+            "pdfUrl": "http://azu.github.io/slide/DOMQuery/sourcemap.pdf",
             markdown: __dirname + "/fixtures/test.md"
         });
         var expected = fs.readFileSync(__dirname + "/fixtures/results.html", "utf-8");
