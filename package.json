@@ -1,7 +1,7 @@
 {
   "name": "pdf-slide-html",
   "description": "generator for slide-pdf.js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "homepage": "https://github.com/azu/pdf-slide-html/",
   "repository": {
     "type": "git",
