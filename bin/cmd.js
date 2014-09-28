@@ -22,7 +22,6 @@ var optionator = require('optionator')({
             type: 'String',
             description: 'pdf file path',
             example: cmd + ' --pdf http://azu.github.io/slide/DOMQuery/sourcemap.pdf',
-            required: true
         },
         {
             option: 'markdown',
@@ -34,8 +33,7 @@ var optionator = require('optionator')({
             alias: 'o',
             type: 'String',
             description: 'output file path',
-            example: cmd + ' --output index.html',
-            required: true
+            example: cmd + ' --output index.html'
         }
     ]
 });

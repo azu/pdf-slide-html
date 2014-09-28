@@ -23,6 +23,7 @@
     "url": "https://github.com/azu/pdf-slide-html/issues"
   },
   "dependencies": {
+    "get-title-markdown": "^2.0.1",
     "marked": "^0.3.2",
     "mustache": "^0.8.2",
     "new-element": "0.0.2",
