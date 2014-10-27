@@ -1,0 +1,17 @@
+html, body, .main-content {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+.markdown-body {
+  min-width: 200px;
+  max-width: 790px;
+  margin: 0 auto;
+  padding: 30px; }
+
+.markdown-body h1 img, .markdown-body h2 img, .markdown-body h3 img, .markdown-body h4 img, .markdown-body h5 img, .markdown-body h6 img,
+.markdown-body li img {
+  height: 1em;
+  vertical-align: text-bottom; }
+.markdown-body img {
+  max-width: 100%; }
