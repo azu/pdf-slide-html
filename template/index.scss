@@ -5,7 +5,7 @@
 
 html, body, .main-content {
   height: 100%;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -13,6 +13,7 @@ html, body, .main-content {
   .svg-icon {
     @extend %text-height;
   }
+  @extend .slide-state-normal;
 }
 
 #main-slide {
@@ -32,8 +33,8 @@ html, body, .main-content {
 }
 
 .slide-state-normal {
-  width: 70%;
-  height: 70%;
+  width: 80%;
+  height: 80%;
 }
 
 .slide-state-fullscreen {

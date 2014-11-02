@@ -3,46 +3,7 @@
 <head lang="ja">
     <meta charset="UTF-8">
     <title>title</title>
-    <style>.main-content .svg-icon, .markdown-body h1 img, .markdown-body h2 img, .markdown-body h3 img, .markdown-body h4 img, .markdown-body h5 img, .markdown-body h6 img,
-    .markdown-body li img {
-        height: 1em;
-        vertical-align: text-bottom; }
-
-    html, body, .main-content {
-        height: 100%;
-        margin: 0;
-        padding: 0; }
-
-    #main-slide {
-        margin: 0 auto;
-        display: block; }
-
-    .slide-controller {
-        width: 70%;
-        height: 70%;
-        margin: 0 auto;
-        display: block;
-        text-align: right; }
-    .slide-controller a, .slide-controller p, .slide-controller button {
-        vertical-align: text-bottom; }
-
-    .slide-state-normal {
-        width: 70%;
-        height: 70%; }
-
-    .slide-state-fullscreen {
-        width: 100%;
-        height: 100%; }
-
-    .markdown-body {
-        min-width: 200px;
-        max-width: 790px;
-        margin: 0 auto;
-        padding: 30px; }
-
-    .markdown-body img {
-        max-width: 100%; }
-    </style>
+    <link href="../../template/index.css" type="text/css" rel="stylesheet"/>
     <noscript>
         <style>
             .main-content {
@@ -55,10 +16,11 @@
 <body>
 <div class="main-content">
     <iframe id="main-slide"
-            class="slide-state-normal"
             src="http://azu.github.io/slide-pdf.js/?slide=http://azu.github.io/slide/DOMQuery/sourcemap.pdf"
             scrolling="no"
             allowtransparency="true"
+            width="100%"
+            height="100%"
             style="border:0;">
     </iframe>
     <aside class="slide-controller"><a href="http://azu.github.io/slide/DOMQuery/sourcemap.pdf" title="title">
@@ -75,15 +37,17 @@
     </aside>
 </div>
 <article class="markdown-body"><h1 id="title">title</h1>
+
     <p>test</p>
 </article>
 <script>
     (function () {
-        var mainSlide = document.getElementById("main-slide");
-        mainSlide.focus();
+        // focus slide
+        document.getElementById("main-slide").focus();
         var fullScreenButton = document.getElementById("js-fullscreen-button");
         fullScreenButton.addEventListener("click", function () {
-            mainSlide.className = "slide-state-fullscreen";
+            var content = document.querySelector(".main-content");
+            content.classList.toggle("slide-state-fullscreen");
         });
     })();
 </script>
