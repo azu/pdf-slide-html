@@ -76,11 +76,12 @@
 </div>
 <script>
     (function () {
-        var mainSlide = document.getElementById("main-slide");
-        mainSlide.focus();
+        // focus slide
+        document.getElementById("main-slide").focus();
         var fullScreenButton = document.getElementById("js-fullscreen-button");
         fullScreenButton.addEventListener("click", function () {
-            mainSlide.className = "slide-state-fullscreen";
+            var content = document.querySelector(".main-content");
+            content.classList.toggle("slide-state-fullscreen");
         });
     })();
 </script>
