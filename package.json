@@ -12,6 +12,7 @@
     "pdf-slide-html": "bin/cmd.js"
   },
   "scripts": {
+    "prepublish": "npm run deploy",
     "deploy": "gh-pages -d public/",
     "test": "mocha test/*.js"
   },
