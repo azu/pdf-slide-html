@@ -3,46 +3,6 @@
 <head lang="ja">
     <meta charset="UTF-8">
     <title>{{title}}</title>
-    <style>.main-content .svg-icon, .markdown-body h1 img, .markdown-body h2 img, .markdown-body h3 img, .markdown-body h4 img, .markdown-body h5 img, .markdown-body h6 img,
-    .markdown-body li img {
-        height: 1em;
-        vertical-align: text-bottom; }
-
-    html, body, .main-content {
-        height: 100%;
-        margin: 0 auto;
-        padding: 0; }
-
-    #main-slide {
-        margin: 0 auto;
-        display: block; }
-
-    .slide-controller {
-        width: 70%;
-        height: 70%;
-        margin: 0 auto;
-        display: block;
-        text-align: right; }
-    .slide-controller a, .slide-controller p, .slide-controller button {
-        vertical-align: text-bottom; }
-
-    .slide-state-normal, .main-content {
-        width: 90%;
-        height: 90%; }
-
-    .slide-state-fullscreen {
-        width: 100%;
-        height: 100%; }
-
-    .markdown-body {
-        min-width: 200px;
-        max-width: 790px;
-        margin: 0 auto;
-        padding: 30px; }
-
-    .markdown-body img {
-        max-width: 100%; }
-    </style>
     <noscript>
         <style>
             .main-content {
@@ -50,7 +10,7 @@
             }
         </style>
     </noscript>
-    <link rel="stylesheet" href="http://sindresorhus.com/github-markdown-css/github-markdown.css"/>
+    <link rel="stylesheet" href="//azu.github.io/pdf-slide-html/index.css"/>
 </head>
 <body>
 <div class="main-content">
@@ -72,20 +32,10 @@
                     style="fill:#000000"></path>
         </svg>
         Download PDF</a>
-        <button class="fullscreen-button" id="js-fullscreen-button">最大化</button>
+        <button class="fullscreen-button" id="js-fullscreen-button">Full Screen</button>
     </aside>
 </div>
-<script>
-    (function () {
-        // focus slide
-        document.getElementById("main-slide").focus();
-        var fullScreenButton = document.getElementById("js-fullscreen-button");
-        fullScreenButton.addEventListener("click", function () {
-            var content = document.querySelector(".main-content");
-            content.classList.toggle("slide-state-fullscreen");
-        });
-    })();
-</script>
 <article class="markdown-body">{{{markdown}}}</article>
+<script async src="//azu.github.io/pdf-slide-html/index.js"></script>
 </body>
 </html>

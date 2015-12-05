@@ -3,7 +3,6 @@
 <head lang="ja">
     <meta charset="UTF-8">
     <title>title</title>
-    <link href="../../template/index.css" type="text/css" rel="stylesheet"/>
     <noscript>
         <style>
             .main-content {
@@ -11,7 +10,7 @@
             }
         </style>
     </noscript>
-    <link rel="stylesheet" href="http://sindresorhus.com/github-markdown-css/github-markdown.css"/>
+    <link rel="stylesheet" href="//azu.github.io/pdf-slide-html/index.css"/>
 </head>
 <body>
 <div class="main-content">
@@ -33,23 +32,12 @@
                     style="fill:#000000"></path>
         </svg>
         Download PDF</a>
-        <button class="fullscreen-button" id="js-fullscreen-button">最大化</button>
+        <button class="fullscreen-button" id="js-fullscreen-button">Full Screen</button>
     </aside>
 </div>
 <article class="markdown-body"><h1 id="title">title</h1>
-
-    <p>test</p>
+<p>test</p>
 </article>
-<script>
-    (function () {
-        // focus slide
-        document.getElementById("main-slide").focus();
-        var fullScreenButton = document.getElementById("js-fullscreen-button");
-        fullScreenButton.addEventListener("click", function () {
-            var content = document.querySelector(".main-content");
-            content.classList.toggle("slide-state-fullscreen");
-        });
-    })();
-</script>
+<script async src="//azu.github.io/pdf-slide-html/index.js"></script>
 </body>
 </html>
