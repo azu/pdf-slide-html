@@ -1,0 +1,60 @@
+%text-height {
+  height: 1em;
+  vertical-align: text-bottom;
+}
+
+html, body, .main-content {
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.main-content {
+  .svg-icon {
+    @extend %text-height;
+  }
+  @extend .slide-state-normal;
+}
+
+#main-slide {
+  margin: 0 auto;
+  display: block;
+}
+
+.slide-controller {
+  width: 70%;
+  height: 70%;
+  margin: 0 auto;
+  display: block;
+  text-align: right;
+  a, p, button {
+    vertical-align: text-bottom;
+  }
+}
+
+.slide-state-normal {
+  width: 90%;
+  height: 90%;
+}
+
+.slide-state-fullscreen {
+  width: 100%;
+  height: 100%;
+}
+
+.markdown-body {
+  min-width: 200px;
+  max-width: 790px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.markdown-body {
+  h1 img, h2 img, h3 img, h4 img, h5 img, h6 img,
+  li img {
+    @extend %text-height;
+  }
+  img {
+    max-width: 100%;
+  }
+}

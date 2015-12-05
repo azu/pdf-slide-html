@@ -1,0 +1,41 @@
+.main-content .svg-icon, .markdown-body h1 img, .markdown-body h2 img, .markdown-body h3 img, .markdown-body h4 img, .markdown-body h5 img, .markdown-body h6 img,
+.markdown-body li img {
+  height: 1em;
+  vertical-align: text-bottom; }
+
+html, body, .main-content {
+  height: 100%;
+  margin: 0 auto;
+  padding: 0; }
+
+#main-slide {
+  margin: 0 auto;
+  display: block; }
+
+.slide-controller {
+  width: 70%;
+  height: 70%;
+  margin: 0 auto;
+  display: block;
+  text-align: right; }
+  .slide-controller a, .slide-controller p, .slide-controller button {
+    vertical-align: text-bottom; }
+
+.slide-state-normal, .main-content {
+  width: 90%;
+  height: 90%; }
+
+.slide-state-fullscreen {
+  width: 100%;
+  height: 100%; }
+
+.markdown-body {
+  min-width: 200px;
+  max-width: 790px;
+  margin: 0 auto;
+  padding: 30px; }
+
+.markdown-body img {
+  max-width: 100%; }
+
+/*# sourceMappingURL=index.css.map */
