@@ -68,7 +68,9 @@ html, body, .main-content {
 // 作成日、更新日
 .slide-date-modified, .slide-date-published {
   float: left;
+  padding-right: 0.2em;
 }
-.slide-controller{
+
+.slide-controller {
   clear: both;
 }
