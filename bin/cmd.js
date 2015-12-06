@@ -21,7 +21,7 @@ var optionator = require('optionator')({
             option: 'pdf-url',
             type: 'String',
             description: 'pdf file path',
-            example: cmd + ' --pdf http://azu.github.io/slide/DOMQuery/sourcemap.pdf',
+            example: cmd + ' --pdf http://azu.github.io/slide/DOMQuery/sourcemap.pdf'
         },
         {
             option: 'markdown',

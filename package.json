@@ -12,9 +12,7 @@
     "pdf-slide-html": "bin/cmd.js"
   },
   "scripts": {
-    "prepublish": "npm run deploy",
-    "deploy": "gh-pages -d public/",
-    "test": "mocha test/*.js"
+    "deploy": "gh-pages -d public/"
   },
   "directories": {
     "test": "test/"
@@ -25,6 +23,7 @@
     "url": "https://github.com/azu/pdf-slide-html/issues"
   },
   "dependencies": {
+    "dateformat": "^1.0.12",
     "get-title-markdown": "^2.0.1",
     "marked": "^0.3.2",
     "mustache": "^2.2.0",
@@ -33,7 +32,6 @@
   },
   "devDependencies": {
     "gh-pages": "^0.6.0",
-    "github-markdown-css": "^2.1.1",
-    "mocha": "^2.0.1"
+    "github-markdown-css": "^2.1.1"
   }
 }
