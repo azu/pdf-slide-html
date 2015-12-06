@@ -61,7 +61,14 @@ html, body, .main-content {
   }
 }
 
-
-.fullscreen-button{
+.fullscreen-button {
   font-size: 1.1em;
+}
+
+// 作成日、更新日
+.slide-date-modified, .slide-date-published {
+  float: left;
+}
+.slide-controller{
+  clear: both;
 }

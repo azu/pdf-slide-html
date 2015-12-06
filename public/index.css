@@ -582,4 +582,10 @@ html, body, .main-content {
 .fullscreen-button {
   font-size: 1.1em; }
 
+.slide-date-modified, .slide-date-published {
+  float: left; }
+
+.slide-controller {
+  clear: both; }
+
 /*# sourceMappingURL=index.css.map */
