@@ -74,3 +74,9 @@ html, body, .main-content {
 .slide-controller {
   clear: both;
 }
+
+
+// iframw wdith = 100 - (100-95*2) - 5
+iframe#main-slide {
+  width: 85%;
+}
