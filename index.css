@@ -589,7 +589,10 @@ html, body, .main-content {
 .slide-controller {
   clear: both; }
 
-iframe#main-slide {
+#main-slide {
   width: 85%; }
+
+.slide-state-fullscreen #main-slide {
+  width: 100%; }
 
 /*# sourceMappingURL=index.css.map */

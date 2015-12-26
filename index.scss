@@ -75,8 +75,11 @@ html, body, .main-content {
   clear: both;
 }
 
-
 // iframw wdith = 100 - (100-95*2) - 5
-iframe#main-slide {
+#main-slide {
   width: 85%;
+}
+
+.slide-state-fullscreen #main-slide {
+  width: 100%;
 }
