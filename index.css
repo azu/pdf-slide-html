@@ -589,4 +589,7 @@ html, body, .main-content {
 .slide-controller {
   clear: both; }
 
+iframe#main-slide {
+  width: 85%; }
+
 /*# sourceMappingURL=index.css.map */
