@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "dateformat": "^1.0.12",
-    "get-title-markdown": "^2.0.1",
+    "get-md-title": "^1.0.4",
     "marked": "^0.3.2",
     "mustache": "^2.2.0",
     "new-element": "0.0.2",
