@@ -539,7 +539,7 @@
   position: relative;
   border-color: #4078c0; }
 
-.main-content .svg-icon, .markdown-body h1 img, .markdown-body h2 img, .markdown-body h3 img, .markdown-body h4 img, .markdown-body h5 img, .markdown-body h6 img,
+.markdown-body h1 img, .markdown-body h2 img, .markdown-body h3 img, .markdown-body h4 img, .markdown-body h5 img, .markdown-body h6 img,
 .markdown-body li img {
   height: 1em;
   vertical-align: text-bottom; }
@@ -548,6 +548,11 @@ html, body, .main-content {
   height: 100%;
   margin: 0 auto;
   padding: 0; }
+
+.main-content .svg-icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: text-bottom; }
 
 #main-slide {
   margin: 0 auto;
