@@ -13,7 +13,9 @@ html, body, .main-content {
 
 .main-content {
   .svg-icon {
-    @extend %text-height;
+    width: 1em;
+    height: 1em;
+    vertical-align: text-bottom;
   }
   @extend .slide-state-normal;
 }
