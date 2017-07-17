@@ -2,8 +2,8 @@
 
 $baseFontSize: 16px;
 $menuFontSize: 24px;
-$slideSizeRatio: 0.85;
-$menuSizeRatio: 0.15;
+$slideSizeRatio: 0.88;
+$menuSizeRatio: 0.12;
 
 %text-height {
   height: 1em;
@@ -53,6 +53,19 @@ html, body {
   }
 }
 
+.fullscreen-button {
+  font-size: $menuFontSize;
+}
+
+// 作成日、更新日
+.slide-date-modified, .slide-date-published {
+  float: left;
+  font-size: $baseFontSize;
+  padding-right: 0.2em;
+  padding-top: $menuFontSize - $baseFontSize;
+  vertical-align: bottom;
+}
+
 // when normal
 .slide-state-normal {
   height: auto;
@@ -84,16 +97,6 @@ html, body {
   img {
     max-width: 100%;
   }
-}
-
-.fullscreen-button {
-  font-size: 1.1em;
-}
-
-// 作成日、更新日
-.slide-date-modified, .slide-date-published {
-  float: left;
-  padding-right: 0.2em;
 }
 
 .slide-controller {
