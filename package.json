@@ -31,7 +31,7 @@
     "optionator": "^0.6.0"
   },
   "devDependencies": {
-    "gh-pages": "^0.6.0",
+    "gh-pages": "^1.0.0",
     "github-markdown-css": "^2.1.1"
   }
 }

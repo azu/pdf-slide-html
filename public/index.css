@@ -556,7 +556,7 @@ html, body {
   vertical-align: text-bottom; }
 
 .main-content {
-  width: 70vw;
+  width: 76vw;
   margin: auto; }
 
 #main-slide {
@@ -565,7 +565,7 @@ html, body {
    100/56.25 = 560/315 = 1.778
    height - menu height
    */
-  height: 39.375vw; }
+  height: 42.75vw; }
 
 .slide-controller {
   border-top: solid 1px #1d3e81;
@@ -577,6 +577,16 @@ html, body {
   text-align: right; }
   .slide-controller a, .slide-controller p, .slide-controller button {
     vertical-align: middle; }
+
+.fullscreen-button {
+  font-size: 24px; }
+
+.slide-date-modified, .slide-date-published {
+  float: left;
+  font-size: 16px;
+  padding-right: 0.2em;
+  padding-top: 8px;
+  vertical-align: bottom; }
 
 .slide-state-normal, .main-content {
   height: auto; }
@@ -597,13 +607,6 @@ html, body {
 
 .markdown-body img {
   max-width: 100%; }
-
-.fullscreen-button {
-  font-size: 1.1em; }
-
-.slide-date-modified, .slide-date-published {
-  float: left;
-  padding-right: 0.2em; }
 
 .slide-controller {
   clear: both; }
