@@ -12,7 +12,8 @@
     "pdf-slide-html": "bin/cmd.js"
   },
   "scripts": {
-    "deploy": "gh-pages -d public/"
+    "deploy": "gh-pages -d public/",
+    "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,css}\""
   },
   "directories": {
     "test": "test/"
@@ -36,6 +37,25 @@
   },
   "devDependencies": {
     "gh-pages": "^2.1.1",
-    "github-markdown-css": "^3.0.1"
+    "github-markdown-css": "^3.0.1",
+    "husky": "^3.0.3",
+    "lint-staged": "^9.2.1",
+    "prettier": "^1.18.2"
+  },
+  "prettier": {
+    "singleQuote": false,
+    "printWidth": 120,
+    "tabWidth": 4
+  },
+  "husky": {
+    "hooks": {
+      "precommit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,css}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
