@@ -17,6 +17,11 @@
   "directories": {
     "test": "test/"
   },
+  "files": [
+    "bin",
+    "lib",
+    "template"
+  ],
   "author": "azu",
   "license": "MIT",
   "bugs": {
