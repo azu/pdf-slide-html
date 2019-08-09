@@ -207,10 +207,6 @@ domexception@^1.0.1:
   dependencies:
     webidl-conversions "^4.0.2"
 
-domify@~1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/domify/-/domify-1.0.0.tgz#9bd040119a3a56dbe12f406a01a3bd1b69fea5c3"
-
 dompurify@^1.0.11:
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-1.0.11.tgz#fe0f4a40d147f7cebbe31a50a1357539cfc1eb4d"
@@ -330,10 +326,6 @@ form-data@~2.3.2:
     asynckit "^0.4.0"
     combined-stream "^1.0.6"
     mime-types "^2.1.12"
-
-format-text@azer/format-text:
-  version "0.0.3"
-  resolved "https://codeload.github.com/azer/format-text/tar.gz/a37e50785c40c94d650c3d1bff2a05e4e69b3279"
 
 fs-extra@^7.0.0:
   version "7.0.1"
@@ -616,14 +608,6 @@ mustache@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/mustache/-/mustache-3.0.1.tgz#873855f23aa8a95b150fb96d9836edbc5a1d248a"
   integrity sha512-jFI/4UVRsRYdUbuDTKT7KzfOp7FiD5WzYmmwNwXyUVypC0xjoTL78Fqc0jHUPIvvGD+6DQSPHIt1NE7D1ArsqA==
-
-new-element@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/new-element/-/new-element-1.0.0.tgz#8408d6437aacf89b830fd8df05e6484cac7bf2b2"
-  integrity sha1-hAjWQ3qs+JuDD9jfBeZITKx78rI=
-  dependencies:
-    domify "~1.0.0"
-    format-text azer/format-text
 
 normalize-url@^1.0.0:
   version "1.9.1"
