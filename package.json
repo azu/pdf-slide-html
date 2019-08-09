@@ -23,15 +23,16 @@
     "url": "https://github.com/azu/pdf-slide-html/issues"
   },
   "dependencies": {
-    "dateformat": "^1.0.12",
+    "dateformat": "^3.0.3",
     "get-md-title": "^1.0.4",
-    "marked": "^0.3.2",
-    "mustache": "^2.2.0",
-    "new-element": "0.0.2",
-    "optionator": "^0.6.0"
+    "marked": "^0.7.0",
+    "mustache": "^3.0.1",
+    "new-element": "1.0.0",
+    "optionator": "^0.8.2",
+    "safe-marked": "^1.0.1"
   },
   "devDependencies": {
-    "gh-pages": "^1.0.0",
-    "github-markdown-css": "^2.1.1"
+    "gh-pages": "^2.1.1",
+    "github-markdown-css": "^3.0.1"
   }
 }

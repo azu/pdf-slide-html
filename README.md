@@ -15,7 +15,8 @@ $ pdf-slide-html -h
 Usage:pdf-slide-html [options]
 
   -h, --help           displays help
-  --base-url String    slide base-url
+  --slide-url String   slide url
+  --base-url String    slide-pdf.js base-url
   --pdf-url String     pdf file path
   --markdown String    markdown file path
   -o, --output String  output file path
@@ -26,7 +27,7 @@ Version 1.0.1
 ### Example
 
 ```
-pdf-slide-html --pdf-url http://azu.github.io/slide/DOMQuery/sourcemap.pdf --base-url http://azu.github.io/slide-pdf.js/ --markdown power-assert-in-browser.md -o index.html
+pdf-slide-html --slide-url https://azu.github.io/slide/DOMQuery/sourcemap.html --pdf-url https://azu.github.io/slide/DOMQuery/sourcemap.pdf --base-url https://azu.github.io/slide-pdf.js/ --markdown ./example/sourcemap.md -o example/index.html
 # => index.html
 ```
 

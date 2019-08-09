@@ -2,7 +2,7 @@
 <html>
 <head lang="ja">
     <meta charset="UTF-8">
-    <title>title</title>
+    <title>[fit] 多段SourceMapと統一的なインターフェース</title>
     <noscript>
         <style>
             .main-content {
@@ -10,12 +10,15 @@
             }
         </style>
     </noscript>
-    <link rel="stylesheet" href="../public/index.css"/>
+    <link rel="stylesheet" href="https://azu.github.io/pdf-slide-html/index.css"/>
+    <link rel="canonical" href="https://azu.github.io/slide/DOMQuery/sourcemap.html">
+    <link rel="author" href="http://www.hatena.ne.jp/efcl/" />
 </head>
-<body>
+<body itemscope itemtype="http://schema.org/Article">
 <div class="main-content">
+    <meta itemprop="name headline" content="[fit] 多段SourceMapと統一的なインターフェース"/>
     <iframe id="main-slide"
-            src="http://azu.github.io/slide-pdf.js/?slide=http://azu.github.io/slide/DOMQuery/sourcemap.pdf"
+            src="https://azu.github.io/slide-pdf.js/?slide=https://azu.github.io/slide/DOMQuery/sourcemap.pdf"
             scrolling="no"
             allowtransparency="true"
             width="100%"
@@ -23,17 +26,19 @@
             style="border:0;">
     </iframe>
     <aside class="slide-controller">
-        <span class="slide-date-published">公開日:<time itemprop="datePublished" datetime="2017-07-05" id="datePublished">
-            2017-07-05
+        <span class="slide-date-published">公開日:<time itemprop="datePublished" datetime="2019-08-09" id="datePublished">
+            2019-08-09
         </time></span>
-        <span class="slide-date-modified">変更日:<time itemprop="dateModified" datetime="2017-07-05" id="dateModified">
-            2017-07-05
+        <span class="slide-date-modified">変更日:<time itemprop="dateModified" datetime="2019-08-09" id="dateModified">
+            2019-08-09
         </time></span>
-        <a href="http://azu.github.io/slide/2017/teppeis-sushi/client-side-ddd-on-github.pdf" title="Faao - ドメイン駆動設計で作るGitHub Issue Client -">
+        <a href="https://azu.github.io/slide/DOMQuery/sourcemap.pdf" title="[fit] 多段SourceMapと統一的なインターフェース">
             <svg xmlns="http://www.w3.org/2000/svg"
                  version="1.1"
                  class="svg-icon"
-                 viewBox="0 0 512 512">
+                 viewBox="0 0 512 512"
+                 width="24"
+                 height="24">
                 <path
                         d="M 224 64 L 224 272 L 128 176 L 128 256 L 256 384 L 384 256 L 384 176 L 288 272 L 288 64 L 224 64 z M 64 320 L 64 448 L 448 448 L 448 320 L 416 320 L 416 416 L 96 416 L 96 320 L 64 320 Z"
                         style="fill:#000000"></path>
@@ -43,7 +48,9 @@
             <svg xmlns="http://www.w3.org/2000/svg"
                  version="1.1"
                  class="svg-icon"
-                 viewBox="0 0 533 533">
+                 viewBox="0 0 533 533"
+                 width="24"
+                 height="24">
                 <g>
                     <path d="M533.333,0v216.667L450,133.333l-100,100l-50-50l100-100L316.667,0H533.333z M233.333,350l-100,100l83.333,83.333H0
 		V316.667L83.333,400l100-100L233.333,350z"></path>
@@ -53,9 +60,174 @@
         </button>
     </aside>
 </div>
-<article class="markdown-body"><h1 id="title">title</h1>
-    <p>test</p>
+<article class="markdown-body" itemprop="articleBody"><h1 id="fit-多段sourcemapと統一的なインターフェース">[fit] 多段SourceMapと統一的なインターフェース</h1>
+<hr>
+<h1 id="自己紹介">自己紹介</h1>
+<p><img alt="アイコン," src="https://github.com/azu/slide/raw/master/offline_study/simple320_320.png"></p>
+<ul>
+<li>Name : <strong>azu</strong></li>
+<li>Twitter : @<a href="https://twitter.com/azu_re">azu_re</a></li>
+<li>Website: <a title="Web scratch" href="http://efcl.info/">Web scratch</a>, <a title="JSer.info" href="http://jser.info/">JSer.info</a></li>
+</ul>
+<hr>
+<h1 id="sourcemap">SourceMap?</h1>
+<p><img alt="fit" src="http://efcl.info/wp-content/uploads/2014/09/basic-sourcemap.png"></p>
+<hr>
+<p><img alt="fit" src="http://efcl.info/wp-content/uploads/2014/09/basic-sourcemap.png"></p>
+<hr>
+<h1 id="1対1のsourcemap">1対1のSourceMap</h1>
+<ul>
+<li>問題ない</li>
+<li>便利</li>
+</ul>
+<hr>
+<h1 id="多段sourcemap">多段SourceMap</h1>
+<p><img alt="fit" src="http://efcl.info/wp-content/uploads/2014/09/multiple-sourcemap.png"></p>
+<hr>
+<p><img alt="fit" src="http://efcl.info/wp-content/uploads/2014/09/multiple-sourcemap.png"></p>
+<hr>
+<h1 id="変換後から元のファイルを辿れない">変換後から元のファイルを辿れない</h1>
+<h2 id="altjs---js---圧縮等で起きる問題">AltJS -&gt; JS -&gt; 圧縮等で起きる問題</h2>
+<hr>
+<h1 id="解決する方法を考えた">解決する方法を考えた</h1>
+<hr>
+<h1 id="multi-stage-sourcemap"><a title="multi-stage-sourcemap" href="https://github.com/azu/multi-stage-sourcemap">multi-stage-sourcemap</a></h1>
+<hr>
+<p><img alt="fit" src="http://efcl.info/wp-content/uploads/2014/09/multiple-stage-sourcemap.png"></p>
+<hr>
+<h1 id="multi-stage-sourcemap-1">multi-stage-sourcemap</h1>
+<ul>
+<li>中間のSourceMap自体はある(という前提)</li>
+<li>中間のSourceMap同士を繋いで新たなSourceMapを作成</li>
+<li>=&gt; 最初と最後のソースを繋ぐSourceMapを作る</li>
+</ul>
+<p><img alt="fit" src="http://efcl.info/wp-content/uploads/2014/09/multiple-stage-sourcemap.png"></p>
+<hr>
+<h1 id="仕様書に載ってた">仕様書に載ってた</h1>
+<blockquote>
+<p>The easy but lossy way is to ignore the intermediate steps in the process for the purposes of debugging, the source location information from the translation is either ignored or the source location information is carried through. 
+-- <a title="Source Map Revision 3 Proposal - Google ドキュメント" href="https://docs.google.com/document/d/1U1RGAehQwRypUTovF1KRlpiOFze0b-_2gc6fAH0KY0k/edit#">Source Map Revision 3 Proposal </a></p>
+</blockquote>
+<hr>
+<h1 id="実例">実例</h1>
+<ul>
+<li><a title="twada/power-assert" href="https://github.com/twada/power-assert">twada/power-assert</a><ul>
+<li><a title="Release v0.9.0: Release 0.9.0 (2014-09-02) multi-stage sourcemaps · twada/power-assert" href="https://github.com/twada/power-assert/releases/tag/v0.9.0">Release v0.9.0: Release 0.9.0 (2014-09-02) multi-stage sourcemaps · twada/power-assert</a></li>
+<li><a title="power-assert 多段 SourceMap 対応の方針" href="https://gist.github.com/twada/103d34a3237cecd463a6">power-assert 多段 SourceMap 対応の方針</a></li>
+<li><a title="twada/battlefield-sourcemaps" href="https://github.com/twada/battlefield-sourcemaps">twada/battlefield-sourcemaps</a></li>
+</ul>
+</li>
+<li><a title="mishoo/UglifyJS2" href="https://github.com/mishoo/UglifyJS2">mishoo/UglifyJS2</a><ul>
+<li><a title="Multi-level Source maps | The CSS Ninja - All things CSS, JavaScript &amp; HTML" href="http://www.thecssninja.com/JavaScript/multi-level-sourcemaps">Multi-level Source maps | The CSS Ninja - All things CSS, JavaScript &amp; HTML</a></li>
+<li>同じような手法を使って対応してる</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p><a title="spy-js" href="http://spy-js.com/">spy-js</a></p>
+<p><img alt="img" src="http://monosnap.com/image/UK4sSqfcU7FYKRd4akcibJI6jiXF7o.png"></p>
+<p>-- <a href="https://twitter.com/SpyDashJs/status/512503730625732608">https://twitter.com/SpyDashJs/status/512503730625732608</a></p>
+<p>Pull Requestもきたし多分載るのでは</p>
+<hr>
+<h1 id="多段sourcemapは戦場">多段SourceMapは戦場</h1>
+<ul>
+<li>SourceMapの仕様には<strong>多段で変換された</strong>という情報がない<ul>
+<li>A -&gt; B(a-b.js.map) -&gt; C(b-c.js.map)</li>
+<li><code>b-c.js.map</code>にはAに関する情報は存在しない</li>
+</ul>
+</li>
+<li>GruntやGulpなどプラグインの責務で変換を行う場合に問題が起きる<ul>
+<li><a title="twada/battlefield-sourcemaps" href="https://github.com/twada/battlefield-sourcemaps">twada/battlefield-sourcemaps</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="grunt">Grunt</h2>
+<blockquote>
+<p>grunt では上流 SourceMap がどう来るか調べる必要がある。</p>
+<ul>
+<li>js と同一ディレクトリに外部 .map ファイルのパターン</li>
+<li>js ファイル末尾に base64 コメントで付いているパターン</li>
+<li><ul>
+<li><a title="power-assert 多段 SourceMap 対応の方針" href="https://gist.github.com/twada/103d34a3237cecd463a6">power-assert 多段 SourceMap 対応の方針</a></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="gulp">Gulp</h2>
+<h3 id="floridoogulp-sourcemaps-に対応してればok"><a title="floridoo/gulp-sourcemaps" href="https://github.com/floridoo/gulp-sourcemaps">floridoo/gulp-sourcemaps</a> に<a title="Plugins with gulp sourcemaps support · floridoo/gulp-sourcemaps Wiki" href="https://github.com/floridoo/gulp-sourcemaps/wiki/Plugins-with-gulp-sourcemaps-support">対応</a>してればOK</h3>
+<h2 id="browserify">Browserify</h2>
+<h3 id="独自のチェーンを持ってるのでそれに対応する"><a title="power-assert 多段 SourceMap 対応の方針" href="https://gist.github.com/twada/103d34a3237cecd463a6#espowerify">独自のチェーンを持ってる</a>のでそれに対応する</h3>
+<hr>
+<h1 id="世代を持つsourcemapを扱う統一インターフェースがない">世代を持つSourceMapを扱う統一インターフェースがない</h1>
+<hr>
+<h1 id="sourcemapのまとめ">SourceMapのまとめ</h1>
+<ul>
+<li>多段SourceMapの対応は最初と最後を繋いだSourceMapを作ることで対応</li>
+<li>中間結果は捨ててしまう</li>
+<li>将来的に中間のバージョンも持つような仕組みが仕様に欲しい<ul>
+<li><a title="Beyond Source Maps" href="http://fitzgeraldnick.com/weblog/55/">Beyond Source Maps</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="ここまで前置き">ここまで前置き</h1>
+<hr>
+<h1 id="統一的なインターフェースast">統一的なインターフェース(AST)</h1>
+<hr>
+<h1 id="aster---ast-based-code-builder"><a title="aster - AST-based code builder" href="http://rreverser.com/aster-ast-based-code-builder/">aster - AST-based code builder</a></h1>
+<ul>
+<li>ASTを使ったツールの問題を解決しようとしてる</li>
+<li>それぞれのプラグイン(変換)ごとにパースと生成の処理が入ってる問題<ul>
+<li>ParseとGenerateはとても重たい処理</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p><img alt="fit" src="http://monosnap.com/image/MQJmxXkCRlIvOzq5x0bzyoytP5zZOl.png"></p>
+<hr>
+<p><img alt="fit" src="http://monosnap.com/image/kQhPiCykxgEsNZnr4CAYhDUjpw60YO.png"></p>
+<hr>
+<h1 id="fit-astを受け取りastを返す">[fit] ASTを受け取りASTを返す</h1>
+<ul>
+<li><a title="aster - AST-based code builder" href="http://rreverser.com/aster-ast-based-code-builder/">aster</a>はASTをInput/Outputするプラグインを使う</li>
+<li>ASTを変換するプラグインはASTを返すインターフェースを持つ</li>
+<li>効率的なASTの変換が行える</li>
+</ul>
+<hr>
+<p><img alt="fit" src="http://monosnap.com/image/9iwjh67u7SxayeMmmqTePdohvwGC0k.png"></p>
+<hr>
+<h1 id="現実">現実</h1>
+<ul>
+<li>ASTを使うモジュールがコードを受け取ってコードを返す</li>
+<li>ASTを受け取ってASTを返すAPIをPublicにしてないものが多い</li>
+<li>SourceMapと同じように扱う形式(SourceMap/AST)は決まってる</li>
+<li>それらを連続的に扱う方法については決まってないので自由に破壊されるケースが多い</li>
+</ul>
+<hr>
+<h1 id="まとめ我々の扱う入力出力">まとめ:我々の扱う入力/出力</h1>
+<ul>
+<li>ソースコード<ul>
+<li>ファイルのコンテンツ</li>
+</ul>
+</li>
+<li>SourceMap<ul>
+<li>ファイルのコンテンツ と ファイルパス</li>
+</ul>
+</li>
+<li>AST<ul>
+<li>SpiderMonkey AST</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="そのた">そのた</h1>
+<ul>
+<li><a title="ASTを扱うツールの作り方 · Issue #19 · efcl/efcl.github.io" href="https://github.com/efcl/efcl.github.io/issues/19">ASTを扱うツールの作り方 · Issue #19 · efcl/efcl.github.io</a></li>
+<li><a title="多段SourceMapの対応方法とライブラリ | Web Scratch" href="http://efcl.info/2014/09/03/multi-stage-sourcemap/">多段SourceMapの対応方法とライブラリ | Web Scratch</a></li>
+</ul>
 </article>
-<script async src="../public/index.js"></script>
+<script async src="https://azu.github.io/pdf-slide-html/index.js"></script>
 </body>
 </html>

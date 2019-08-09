@@ -12,9 +12,15 @@ var optionator = require('optionator')({
             description: 'displays help'
         },
         {
+            option: 'slide-url',
+            type: 'String',
+            description: 'slide url',
+            example: cmd + ' --slide-url https://azu.github.io/slide/example/slide.html'
+        },
+        {
             option: 'base-url',
             type: 'String',
-            description: 'slide base-url',
+            description: 'slide-pdf.js base-url',
             example: cmd + ' --base-url http://azu.github.io/slide-pdf.js/'
         },
         {
