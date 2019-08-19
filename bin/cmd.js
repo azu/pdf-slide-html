@@ -18,6 +18,12 @@ var optionator = require("optionator")({
             example: cmd + " --slide-url https://azu.github.io/slide/example/slide.html"
         },
         {
+            option: "author-url",
+            type: "String",
+            description: "author url",
+            example: cmd + " --author-url https://www.hatena.ne.jp/efcl/"
+        },
+        {
             option: "base-url",
             type: "String",
             description: "slide-pdf.js base-url",
