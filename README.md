@@ -5,13 +5,13 @@ Generator cli for [azu/slide-pdf.js](https://github.com/azu/slide-pdf.js "azu/sl
 ## Installation
 
 ```
-npm install -g pdf-slide-html
+npm install --global pdf-slide-html
 ```
 
 ## Usage
 
 ```
-$ pdf-slide-html -h
+$ pdf-slide-html --help
 Usage:pdf-slide-html [options]
 
   -h, --help           displays help
