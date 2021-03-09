@@ -33,7 +33,7 @@
     "get-md-title": "^1.0.4",
     "mustache": "^3.0.1",
     "optionator": "^0.8.2",
-    "safe-marked": "^1.0.1"
+    "safe-marked": "^5.0.0"
   },
   "devDependencies": {
     "gh-pages": "^2.1.1",
